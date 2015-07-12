@@ -1,6 +1,6 @@
 # grunt-babelsbergjs
 
-> Helper for BabelsbergJS for Node.
+Grunt-babelsbergjs is a helper for BabelsbergJS on Node. It uses [babelsbergjs-require](https://github.com/babelsbergjs/babelsbergjs-require) to transform .bbb files to plain JavaScript.
 
 ## Getting Started
 This plugin requires Grunt `~0.4.5`
