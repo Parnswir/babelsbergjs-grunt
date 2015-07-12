@@ -2,17 +2,17 @@
   "name": "grunt-babelsbergjs",
   "description": "Helper for BabelsbergJS for Node.",
   "version": "0.0.1",
-  "homepage": "",
+  "homepage": "https://github.com/Parnswir/babelsbergjs-grunt",
   "author": {
     "name": "Maximilian Grundke",
     "email": "maximiliangrundke@googlemail.com"
   },
   "repository": {
     "type": "git",
-    "url": "none"
+    "url": "https://github.com/Parnswir/babelsbergjs-grunt"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Parnswir/babelsbergjs-grunt/issues"
   },
   "licenses": [
     {
