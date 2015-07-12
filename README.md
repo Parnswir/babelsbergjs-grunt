@@ -24,13 +24,25 @@ In your project's Gruntfile, add a section named `babelsbergjs` to the data obje
 
 ```js
 grunt.initConfig({
-  babelsbergjs: {
-    options: {
-      // Task-specific options go here.
-    },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
-  },
-});
+    pkg: grunt.file.readJSON('package.json'),
+    babelsbergjs: {
+      build: {
+        cwd: 'src/',
+        src: '**/*.bbb',
+        dest: 'dist/'
+      }
+    }
+  });
+```
+
+### Using the task
+
+```shell
+grunt babelsbergjs
+```
+
+Or use it in another task:
+
+```js
+grunt.registerTask('some_name', ['some_other_task', 'babelsbergjs']);
 ```
