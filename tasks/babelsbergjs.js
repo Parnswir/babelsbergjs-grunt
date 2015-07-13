@@ -1,6 +1,6 @@
 /*
  * grunt-babelsbergjs
- * 
+ *
  *
  * Copyright (c) 2015 Maximilian Grundke
  * Licensed under the MIT license.
@@ -8,7 +8,7 @@
 
 'use strict';
 
-var BabelsbergSrcTransform = require("./../node_modules/babelsbergjs-require/src/src_transform.js");
+var BabelsbergSrcTransform = require("babelsbergjs-srctransform");
 
 module.exports = function(grunt) {
 
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       f.src.forEach(function(filepath) {
         if (!grunt.file.exists(f.cwd + filepath)) {
           grunt.log.warn('Source file "' + f.cwd + filepath + '" not found.');
-          
+
         }
         var content = grunt.file.read(f.cwd + filepath)
         var transformed = new BabelsbergSrcTransform().transform(content);
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         grunt.file.write(filename, transformed);
       });
     });
-  
+
   });
 
 };
