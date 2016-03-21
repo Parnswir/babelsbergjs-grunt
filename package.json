@@ -1,7 +1,7 @@
 {
   "name": "grunt-babelsbergjs",
   "description": "Helper for BabelsbergJS for Node.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "homepage": "https://github.com/babelsbergjs/babelsbergjs-grunt",
   "author": {
     "name": "Maximilian Grundke",
